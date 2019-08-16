@@ -1,0 +1,5 @@
+name = limpa_cache
+description = Modulo para limpar cache do conteudo quando esse for atualizado
+package = Custom
+core = 7.x
+version = 7.x-1.0

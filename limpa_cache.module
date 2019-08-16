@@ -1,0 +1,8 @@
+<?php
+/**
+ * Implements hook_node_update().
+ */
+function limpa_cache_node_update($node) {
+  $nodeurl = url('node/'. $node->nid, array('absolute' => TRUE));
+  cache_clear_all($nodeurl, 'cache_page');
+}
